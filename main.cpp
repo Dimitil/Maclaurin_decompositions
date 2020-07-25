@@ -21,7 +21,7 @@ double _pow(double a, double x, int precision = defPrecision)
 	double member = 1;
 	double sum = 0;
 	
-	double ln_a = log(a); //здесь не знаю что придумать
+	double ln_a = log(a); //здесь не знаю что придумать (кроме вызова написанной функции _log(a))
 	for (int i = 1; i <= precision; i++)
 	{
 		sum += member;
