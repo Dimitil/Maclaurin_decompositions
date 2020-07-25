@@ -21,7 +21,7 @@ double _pow(double a, double x, int precision = defPrecision)
 	double member = 1;
 	double sum = 0;
 	
-	double ln_a = log(a); //здесь не знаю что придумать (кроме вызова написанной функции _log(a))
+	double ln_a = log(a); //здесь не знаю что придумать (кроме вызова написанной функции ne znau chto pridumat' crome vizova funcii nije _log(a))
 	for (int i = 1; i <= precision; i++)
 	{
 		sum += member;
@@ -33,7 +33,7 @@ double _pow(double a, double x, int precision = defPrecision)
 }
 
 
-double logFrom1MinusX(double x, int precision = defPrecision) //проверку на ввод сказали не делать
+double logFrom1MinusX(double x, int precision = defPrecision) //проверку на ввод сказали не делать vi skazali, chto proverku na vvod skazali ne delat'
 {
 	
 	double member = x;
@@ -195,7 +195,7 @@ double _cbrt(double x, int precision = defPrecision)
 	return member;
 }
 
-double _revSqrt(double x, int m=2, int precision = defPrecision) //возможно, m должна быть только четной
+double _revSqrt(double x, int m=2, int precision = defPrecision) //возможно, m должна быть только четной vozmojno m doljna bbit' tol'ko chetnoi
 {
 	double member = 2;
 	for (int i = 1; i < m / 2; i++)
