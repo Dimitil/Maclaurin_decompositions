@@ -1,4 +1,5 @@
 #include <iostream>
+#include <cmath>
 
 int const defPrecision = 50;
 
@@ -21,7 +22,7 @@ double _pow(double a, double x, int precision = defPrecision)
 	double member = 1;
 	double sum = 0;
 	
-	double ln_a = log(a); //здесь не знаю что придумать (кроме вызова написанной функции ne znau chto pridumat' crome vizova funcii nije _log(a))
+	double ln_a = log(a); //Г§Г¤ГҐГ±Гј Г­ГҐ Г§Г­Г Гѕ Г·ГІГ® ГЇГ°ГЁГ¤ГіГ¬Г ГІГј (ГЄГ°Г®Г¬ГҐ ГўГ»Г§Г®ГўГ  Г­Г ГЇГЁГ±Г Г­Г­Г®Г© ГґГіГ­ГЄГ¶ГЁГЁ ne znau chto pridumat' crome vizova funcii nije _log(a))
 	for (int i = 1; i <= precision; i++)
 	{
 		sum += member;
@@ -33,7 +34,7 @@ double _pow(double a, double x, int precision = defPrecision)
 }
 
 
-double logFrom1MinusX(double x, int precision = defPrecision) //проверку на ввод сказали не делать vi skazali, chto proverku na vvod skazali ne delat'
+double logFrom1MinusX(double x, int precision = defPrecision) //ГЇГ°Г®ГўГҐГ°ГЄГі Г­Г  ГўГўГ®Г¤ Г±ГЄГ Г§Г Г«ГЁ Г­ГҐ Г¤ГҐГ«Г ГІГј vi skazali, chto proverku na vvod skazali ne delat'
 {
 	
 	double member = x;
@@ -195,7 +196,7 @@ double _cbrt(double x, int precision = defPrecision)
 	return member;
 }
 
-double _revSqrt(double x, int m=2, int precision = defPrecision) //возможно, m должна быть только четной vozmojno m doljna bbit' tol'ko chetnoi
+double _revSqrt(double x, int m=2, int precision = defPrecision) //ГўГ®Г§Г¬Г®Г¦Г­Г®, m Г¤Г®Г«Г¦Г­Г  ГЎГ»ГІГј ГІГ®Г«ГјГЄГ® Г·ГҐГІГ­Г®Г© vozmojno m doljna bbit' tol'ko chetnoi
 {
 	double member = 2;
 	for (int i = 1; i < m / 2; i++)
